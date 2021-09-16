@@ -1,0 +1,226 @@
+:root {
+    
+    --cyan: hsl(180, 62%, 55%);
+    
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+  }
+  
+ 
+  .box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px #343a40;
+   background-color: #343a40;
+    margin: 40px;
+    margin-left: 10%;
+  }
+  h2 {
+      margin: 2vw;
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--weight3);
+  }
+  
+  
+  @media (max-width: 450px) {
+    .box {
+      height: 100%;
+    }
+    h2 
+    {
+        font-size: 0.1rem;
+    }
+    
+  }
+  
+  @media (max-width: 950px) and (min-width: 450px) {
+    .box {
+      text-align: center;
+      height: 100%;
+    }
+    h2 
+    {
+        font-size: 0.7rem;
+    }
+  }
+  
+  
+  
+  @media (min-width: 950px) {
+    .box {
+      width: 350px;
+      height: 100%;
+      
+    }
+    
+  }
+  
+  
+  .loader
+  {
+      width: 90px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  .loader div
+  {
+      width: 7px;
+      height: 50px;
+      background: red;
+      position: absolute;
+      border-radius: 3px;
+      top: 15px;
+  }
+  
+  .loader div:nth-last-child(1)
+  {
+      left: 0px;
+      animation: animate1 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(2)
+  {
+      left: 10px;
+      animation: animate2 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(3)
+  {
+      left: 20px;
+      animation: animate3 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(4)
+  {
+      left: 30px;
+      animation: animate4 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(5)
+  {
+      left: 40px;
+      animation: animate5 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(6)
+  {
+      left: 50px;
+      animation: animate6 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(7)
+  {
+      left: 60px;
+      animation: animate7 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(8)
+  {
+      left: 70px;
+      animation: animate8 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(9)
+  {
+      left: 80px;
+      animation: animate9 1s ease-in-out infinite;
+  }
+  .loader div:nth-last-child(odd)
+  {
+      background: #1ba490;
+  }
+  .loader div:nth-last-child(even)
+  {
+      background: #3a4652;
+  }
+  
+  @keyframes animate1{
+      10%
+      {
+          top: 0px; height: 50px;
+      }
+      30%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate2{
+      20%
+      {
+          top: 0px; height: 50px;
+      }
+      40%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate3{
+      30%
+      {
+          top: 0px; height: 50px;
+      }
+      50%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate4{
+      40%
+      {
+          top: 0px; height: 50px;
+      }
+      60%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate5{
+      50%
+      {
+          top: 0px; height: 50px;
+      }
+      70%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate6{
+      60%
+      {
+          top: 0px; height: 50px;
+      }
+      80%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate7{
+      70%
+      {
+          top: 0px; height: 50px;
+      }
+      90%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate8{
+      80%
+      {
+          top: 0px; height: 50px;
+      }
+      100%
+      {
+         top: 15px; height:20px 
+      }
+  }
+  @keyframes animate9{
+      90%
+      {
+          top: 0px; height: 50px;
+      }
+      10%
+      {
+         top: 15px; height:20px 
+      }
+  }
